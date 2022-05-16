@@ -29,7 +29,7 @@ public class EmployeeController {
 
     @GetMapping
     public List<Employee> getEmployees(){
-        System.out.println("URL:::::::::::" + url);
+        System.out.println("DB-URL:::::::::::" + url);
         return employeeService.getEmployees();
     }
 
