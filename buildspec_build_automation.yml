@@ -14,10 +14,10 @@ phases:
       - echo Building the Docker image...
       - echo current directory before maven package
       - ls -la
-#      - echo packaging the jar file...
-#      - mvn package
-#      - echo current directory after maven package
-#      - ls -la
+      - echo packaging the jar file...
+      - mvn package
+      - echo current directory after maven package
+      - ls -la
       - docker build -t $IMAGE_REPO_NAME:$IMAGE_TAG -f "${DockerFilePath}" .
       - docker tag $IMAGE_REPO_NAME:$IMAGE_TAG $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
   post_build:
