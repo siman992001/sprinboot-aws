@@ -6,26 +6,26 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 
 @SpringBootApplication
+@EnableScheduling
 public class SpringbootApplication implements CommandLineRunner, ApplicationRunner {
 
 
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringbootApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SpringbootApplication.class, args);
+    }
 
-	@Override
-	public void run(String[] args){
-		System.out.println("Command Line Runner");
-	}
+    @Override
+    public void run(String[] args) {
+        System.out.println("Command Line Runner");
+    }
 
-	@Override
-	public void run(ApplicationArguments args) throws Exception {
-		System.out.println("Application Runner");
-	}
+    @Override
+    public void run(ApplicationArguments args) throws Exception {
+        System.out.println("Application Runner");
+    }
 }
