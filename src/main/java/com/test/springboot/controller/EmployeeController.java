@@ -19,7 +19,7 @@ public class EmployeeController {
     @Autowired
     EmployeeService employeeService;
 
-    @Value("${spring.datasource.url}")
+    @Value("${spring.datasource.jdbcUrl}")
     private String url;
 
 //    @GetMapping(value="{id}", produces = MediaType.APPLICATION_JSON_VALUE)
