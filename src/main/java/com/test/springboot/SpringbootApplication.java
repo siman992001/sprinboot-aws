@@ -17,6 +17,8 @@ public class SpringbootApplication implements CommandLineRunner, ApplicationRunn
 
     public static void main(String[] args) {
         SpringApplication.run(SpringbootApplication.class, args);
+        System.out.println("Shutting down application");
+        System.exit(0);
     }
 
     @Override
