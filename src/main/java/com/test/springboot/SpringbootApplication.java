@@ -6,7 +6,9 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.stereotype.Component;
 
 
 @SpringBootApplication
@@ -17,8 +19,8 @@ public class SpringbootApplication implements CommandLineRunner, ApplicationRunn
 
     public static void main(String[] args) {
         SpringApplication.run(SpringbootApplication.class, args);
-        System.out.println("Shutting down application");
-        System.exit(0);
+        //System.out.println("Shutting down application");
+        //System.exit(0);
     }
 
     @Override
