@@ -13,9 +13,10 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - echo current directory before maven package
+      - mvn -version
       - ls -la
       - echo packaging the jar file...
-      - mvn package
+      - mvn package -e
       - echo current directory after maven package
       - ls -la
       - docker build -t $IMAGE_REPO_NAME:$IMAGE_TAG -f "${DockerFilePath}" .
