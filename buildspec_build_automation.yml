@@ -19,7 +19,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - echo current directory before maven package ver 1
+      - echo current directory before maven package ver 2
       - mvn -version
       - ls -la
       - echo packaging the jar file...
